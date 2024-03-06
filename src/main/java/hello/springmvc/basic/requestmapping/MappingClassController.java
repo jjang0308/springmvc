@@ -27,14 +27,15 @@ public class MappingClassController {
         return "get userID = "+ userId;
     }
 
-    @DeleteMapping("/{userId}")
+    @PatchMapping("/{userId}")
     public String updateUser(@PathVariable String userId) {
         return "update userID = "+ userId;
     }
-
-    @PatchMapping("/{userId}")
+    @DeleteMapping("/{userId}")
     public String deleteUser(@PathVariable String userId) {
         return "delete userID = "+ userId;
     }
+
+
 
 }

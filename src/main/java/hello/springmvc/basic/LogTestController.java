@@ -7,12 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//@Slf4j
+@Slf4j
 @RestController
 public class LogTestController {
-    private final Logger log = LoggerFactory.getLogger(getClass());
 
-    @RequestMapping
+    @RequestMapping("/log-test")
     public String loggerTest(){
         String name = "Spring";
 
